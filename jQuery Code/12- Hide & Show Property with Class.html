@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Learning jQuery </title>
+    <link rel = "Stylesheet" type = "text/css" href = "jQuery.css">
+        <style>
+            .covid
+            {
+                height: 100px;
+                width: 225px;
+                border: 2px solid black;
+                background-color: orange;
+            }
+        </style>
+    <script src = "jQuery.js"> </script>
+
+    <script>
+            $(document).ready(function()
+            {
+               $("#button").click(function(){
+                    $("p").removeClass();
+               });
+               $("#button1").click(function(){
+                    $("p").addClass("covid");
+               });
+            });
+    </script>
+
+</head>
+    <body>
+        <button id = "button"> Click For Hide </button>
+        <button id = "button1"> Click For Show </button>
+
+        <p class = "covid"> I'm Muslim and Bangladeshi </p>
+		
+		<pre>
+            ● We can use toggle function without using two button.
+        </pre>
+    </body>
+</html>

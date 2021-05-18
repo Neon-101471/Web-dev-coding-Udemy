@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JavaScript | Condition </title>
+</head>
+<body>
+    <button onClick = "condition()"> Press The Button </button>
+    <script>
+        function condition ()
+        {
+            var value1 = parseInt(prompt("Enter the first value"));
+            var value2 = parseInt(prompt("Enter the first value"));
+            if(value1>value2)
+            {
+                document.write(value1 +" is greater than " +value2);
+            }
+            else if (value1<value2)
+            {
+                document.write(value1 +" is less than " +value2);
+            }
+            else
+            {
+                document.write("They are the similar value.");
+            }
+        }
+    </script>
+    
+</body>
+</html>

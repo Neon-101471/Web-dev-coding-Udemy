@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JavaScript | Calculator </title>
+    <style>
+       div
+       {
+        margin: 200px 0px 0px 75px;
+       }
+       #zero
+       {
+           width:144px;
+           background-color:lightsteelblue;
+       }
+       button
+       {
+           margin:5px;
+           margin-left: 0px;
+           padding:5px;
+           background-color:lightsteelblue;
+           width: 42px;
+       }
+       button:hover, #zero:hover, #clean:hover
+       {
+           background-color: gray;
+           border-radius: 10px;
+       }
+       #calculate
+       {
+           width: 93px;
+           margin-left: -12px;
+           background-color: lightseagreen;
+       }
+       #calculate:hover
+       {
+           border-radius: 0px;
+       }
+       #clean
+       {
+           background-color: lightsteelblue;
+           width: 93px;
+       }
+       #input
+       {
+           color:maroon;
+           height:20px;
+           width:138px;
+       }
+    </style>
+ 
+</head>
+    <script>
+        function calculate ()
+        {
+            var n = document.getElementById("input").value;
+            var sum = 0;
+            for(var i=1; i<=n; i++)
+            {
+                sum = sum + i;
+            }
+            document.getElementById("input").value = "Result = "+sum;
+        }
+    </script>
+    <div>
+        <input type = "text" id = "input"> &nbsp; &nbsp;
+        <button id = "calculate"> Calculator </button> </br> </br>
+        <button id = "zero" onclick = "document.getElementById('input').value = document.getElementById('input').value+0"> 0 </button>
+            <button id = "clean" onClick = "document.getElementById('input').value = document.getElementById('input').value = ''"> C </button></br> </br>
+        <button onclick = "document.getElementById('input').value = document.getElementById('input').value+1"> 1 </button>
+        <button onclick = "document.getElementById('input').value = document.getElementById('input').value+2"> 2 </button>
+        <button onclick = "document.getElementById('input').value = document.getElementById('input').value+3"> 3 </button>
+            <button> + </button>
+            <button> - </button></br> </br>
+        <button onclick = "document.getElementById('input').value = document.getElementById('input').value+4"> 4 </button>
+        <button onclick = "document.getElementById('input').value = document.getElementById('input').value+5"> 5 </button>
+        <button onclick = "document.getElementById('input').value = document.getElementById('input').value+6"> 6 </button>
+            <button> &times; </button>
+            <button> &divide; </button></br> </br>
+        <button onclick = "document.getElementById('input').value = document.getElementById('input').value+7"> 7 </button>
+        <button onclick = "document.getElementById('input').value = document.getElementById('input').value+8"> 8 </button>
+        <button onclick = "document.getElementById('input').value = document.getElementById('input').value+9"> 9 </button>
+            <button> % </button>
+            <button onClick = "calculate()" > = </button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JavaScript | Objects </title>
+        <style>
+            
+            div
+            { 
+                background-color: lightblue;
+                height: 200px;
+                width:500px;
+                margin: 25px 0px 0px 0px;
+                font-family: comic sans ms;
+                text-align: center;
+                padding:25px;
+            }
+        </style>
+</head>
+    <script>
+        function data()
+        {
+            var person = {name:" ", age: " ", nationality: " "};
+            person.name = prompt("Enter your name: ")
+            person.age = prompt("Enter your age: ")
+            person.nationality = prompt("Enter your nationality: ")
+            document.getElementById("value").innerHTML = "I am "+ person.name +" and I'm "+ person.age+ " years old." + " My nationality is "+ person.nationality +".";
+        }
+    </script>
+    <button onclick = "data()"> Click Here </button>
+    <div id = "value"> </div>
+</body>
+</html>

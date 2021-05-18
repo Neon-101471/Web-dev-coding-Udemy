@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JavaScript | Homepage </title>
+</head>
+<body>
+    <h4 id = "addition"> </h4>
+    <button onclick = "plusId()"> Click Here </button>
+    <script>
+        function plusId ()
+        {
+            var number1 = parseInt(prompt("Enter the value of number1"));
+            var number2 = parseInt(prompt("Enter the value of number2"));
+            var result = number1 + number2;
+            document.getElementById('addition').innerHTML = "The addition is = " + result;
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JavaScript | Array </title>
+
+    <style>
+        #design
+        {
+            color: lightseagreen;
+            font-family: comic sans ms;
+            margin: 100px 0px 0px 100px;
+            text-align: center;
+            background-color: green;
+            height: 400px;
+            width: 300px;
+            color: white
+        }
+        button
+        {
+            background-color: lightslategrey;
+            margin: 20px;
+            padding: 5px;
+        }
+        #spanDesign
+        {
+            color:black;
+            font-size: 20px;
+        }
+    </style>
+    
+</head>
+    <script>
+        function run ()
+
+        {
+            var name = ["Shakib Al Hasan", "Tamim Iqbal", "Hashim Amla", "Joe Root", "Shachin Tendulkar", "Steve Smith", "Cris Gayle", "Kane Williamson"];
+            for(i=0; i< name.length; i++)
+            {
+                document.getElementById("result").innerHTML = document.getElementById("result").innerHTML +'<span id = "spanDesign">'+(i+1)+ '. '+'</span>'+ name[i]+ '</br>';
+            }
+            
+        }
+        
+    </script>
+    <div id = "design">
+        <button onclick = "run ()"> Click Here </button> </br>
+    <div id = "result"> </div>
+    </div>
+    
+</body>
+</html>

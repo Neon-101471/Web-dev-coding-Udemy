@@ -1,0 +1,34 @@
+#contact-header
+{
+    background-color: #8e5c3e;
+    color: white;
+}
+
+#header
+{
+    height: 100px;
+    background-color: teal;
+}
+#navbar
+{
+    margin-top: 48px;
+    float: right;
+}
+#logo
+{
+    height: 100px;
+    width: 150px;
+    margin-left:0px;
+}
+.nav-item:hover
+{
+    background-color: orange;
+}
+.nav-item
+{
+    background-color: grey;
+}
+.nav-item a
+{
+    color: white;
+}

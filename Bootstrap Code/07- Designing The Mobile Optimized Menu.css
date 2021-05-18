@@ -1,0 +1,21 @@
+#contact-header
+{
+    background-color: blueviolet;
+    color: white;
+}
+
+#cobalt
+{
+    float: left;
+}
+
+.navilinks:hover
+{
+    background-color: orangered;
+    border-radius: 12px;
+}
+
+.navilinks a
+{
+    color: white !important;
+}

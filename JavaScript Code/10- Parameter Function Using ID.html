@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Parameter Functions</title>
+    <style>
+    button
+    {
+        margin: 50px 0px 0px 250px;
+        background-color: lightblue;
+        width:100px;
+        height: 25px;
+    }
+    #pandemic
+    {
+        color:lightgreen;
+        font-family: comic sans ms;
+    }
+    </style>
+</head>
+<body>
+
+        <script>
+            function Covid(statement,id)
+            {
+                document.getElementById(id).innerHTML = statement;
+            }
+           
+        </script>
+        <h5> Press the button and find your result: </h5>
+        <h2 id = "pandemic"> </h2>
+    <button onClick = "Covid('How are you?', 'pandemic')"> Clic Here </button>
+    
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JavaScript | Calculator </title>
+    <style>
+        #value1, #value2
+        {
+            width:100px;
+            background-color: lightblue;
+            text-align: center;
+        }
+        #operator
+        {
+            width:35px;
+            background-color:lightgray;
+            text-align: center;
+        }
+        div
+        {
+            margin: 100px 0px 0px 300px;
+        }
+    </style>
+    </style>
+</head>
+<br>
+    
+    <script>
+                function result ()
+                {
+                    var number1 = document.getElementById('value1').value;
+                    var number2 = document.getElementById('value2').value;
+                    var operator = document.getElementById('operator').value;
+                    
+                    if (operator == '+')
+                    {
+                        document.getElementById('result').innerHTML = "The Addition is = "+ (parseInt(number1) + parseInt(number2));
+                    }
+                    else if (operator == '-')
+                    {
+                        document.getElementById('result').innerHTML = "The Substraction is = "+ (parseInt(number1) - parseInt(number2));
+                    }
+                    else if (operator == '*')
+                    {
+                        document.getElementById('result').innerHTML = "The Multiplication is = "+ (parseInt(number1) * parseInt(number2));
+                    }
+                    else if (operator == '/')
+                    {
+                        document.getElementById('result').innerHTML = "The Divition is = "+ (parseInt(number1) / parseInt(number2));
+                    }
+                    else if (operator == '%')
+                    {
+                        document.getElementById('result').innerHTML = "The Remainder is = "+ (parseInt(number1) % parseInt(number2));
+                    }
+                    else
+                    {
+                        document.getElementById('result').innerHTML = "Sorry! You pressed an Invalid Operator.";
+                    }
+                }
+    </script>
+    <div>
+        <input type = "number" id = "value1"> &nbsp; &nbsp;
+        <input type = "text" id = "operator"> &nbsp; &nbsp;
+        <input type = "number" id = "value2"> </br> </br>
+
+        <button onClick = "result()"> Result </button>
+        <h4 id = "result"> You can see the result here: </h4>
+    </div>
+    
+</body>
+</html>

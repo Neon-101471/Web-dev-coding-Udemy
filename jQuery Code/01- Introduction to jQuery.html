@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Learning jQuery </title>
+    <link rel = "Stylesheet" type = "text/css" href = "jQuery.css">
+
+        <script>
+                function print(input,id)
+                {
+                    document.getElementById(id).innerHTML = input;
+                }
+        </script>
+</head>
+
+    <body>
+        <h3 id = "location"> Where are you from? </h3>
+        <button onclick = "print('I am from Bangladesh', 'location')"> Click </button>
+
+        <script src = "jQuery.js"> </script>
+    </body>
+
+</html>

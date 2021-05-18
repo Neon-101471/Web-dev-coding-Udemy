@@ -1,0 +1,7 @@
+#box
+{
+    height: 110px;
+    width: 140px;
+    background-color:blue;
+    position: fixed;
+}

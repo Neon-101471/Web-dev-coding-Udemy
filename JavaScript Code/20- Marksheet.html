@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JS | Marksheet</title>
+
+    <style>
+        body
+        {
+            background-color: #18324F;
+            font-family: comic sans ms;
+        }		
+        #container
+        {
+            max-width: 1000px;
+            margin: auto;
+            padding-top:8px;
+        }
+        #input
+        {
+            height:250px;
+            width:100%;
+            background-color: lightblue;
+            padding-top:10px;
+        }
+        #output
+        {
+            padding-bottom:20px;
+            padding-top:20px;
+            width:100%;
+            background-color: lightsteelblue;
+        }
+        #result
+        {
+            height: 80px;
+            background-color: lightgrey;
+            float:clear;
+        }
+        #subject
+        {
+            width:40%;
+            height:200px;
+            margin:35px 0px 0px 20px;
+            float:left;
+        }
+        #marks
+        {
+            width:40%;
+            height:200px;
+            margin:35px 0px 0px -20px;
+            float:right;
+        }
+        input
+        {
+            margin-bottom: 10px;
+            margin-left:15px;
+            text-align:center;
+        }
+        #tablediv
+        {
+            width:40%;
+            margin: 0px auto;
+        }
+        #result1
+        {
+            height:80px;
+            width:50%;
+            float:left;
+        }
+        #result2
+        {
+            height:80px;
+            width:50%;
+            float:right;
+        }
+        #sname, #sregi, #spercen, #sroll, #smarks, #sgrade
+        {
+            margin-left:5px;
+            margin-top:15px;
+            padding:10px;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <script>
+        function calculation ()
+        {
+            var mark1 = parseInt(document.getElementById("mark1").value);
+            var mark2 = parseInt(document.getElementById("mark2").value);
+            var mark3 = parseInt(document.getElementById("mark3").value);
+            var mark4 = parseInt(document.getElementById("mark4").value);
+            var mark5 = parseInt(document.getElementById("mark5").value);
+
+            var totalMarks = (mark1+mark2+mark3+mark4+mark5);
+            var percentage = (100*totalMarks)/500;
+
+            if (percentage>=80 && percentage<=100)
+            {
+                document.getElementById("grade").innerHTML = ("Congratulations! You have got A+");
+            }
+            else if (percentage>=70 && percentage<=79)
+            {
+                document.getElementById("grade").innerHTML = ("Congratulations! You have got A");
+            }
+            else if (percentage>=60 && percentage<=69)
+            {
+                document.getElementById("grade").innerHTML = ("Congratulations! You have got A-");
+            }
+            else if (percentage>=50 && percentage<=59)
+            {
+                document.getElementById("grade").innerHTML = ("Congratulations! You have got B");
+            }
+            else if (percentage>=40 && percentage<=49)
+            {
+                document.getElementById("grade").innerHTML = ("Congratulations! You have got C");
+            }
+            else if (percentage>=33 && percentage<=39)
+            {
+                document.getElementById("grade").innerHTML = ("Congratulations! You have got D");
+            }
+            else if (percentage<33)
+            {
+                document.getElementById("grade").innerHTML = ("SORRY! You are Failed. Better Luck Next Time");
+            }
+            else
+            {
+                document.getElementById("grade").innerHTML = ("Invalid Results! Please Provide accurate information");
+            }
+
+            
+
+            document.getElementById("tsub1").innerHTML = document.getElementById("sub1").value; 
+            document.getElementById("tsub2").innerHTML = document.getElementById("sub2").value;
+            document.getElementById("tsub3").innerHTML = document.getElementById("sub3").value;
+            document.getElementById("tsub4").innerHTML = document.getElementById("sub4").value;
+            document.getElementById("tsub5").innerHTML = document.getElementById("sub5").value;
+            document.getElementById("tmark1").innerHTML = document.getElementById("mark1").value; 
+            document.getElementById("tmark2").innerHTML = document.getElementById("mark2").value;
+            document.getElementById("tmark3").innerHTML = document.getElementById("mark3").value;
+            document.getElementById("tmark4").innerHTML = document.getElementById("mark4").value;
+            document.getElementById("tmark5").innerHTML = document.getElementById("mark5").value;
+            
+            document.getElementById("name").innerHTML = document.getElementById("stname").value;
+            document.getElementById("roll").innerHTML = document.getElementById("stroll").value;
+            document.getElementById("registration").innerHTML = document.getElementById("stregistration").value;
+            document.getElementById("totalmarks").innerHTML = totalMarks;
+            document.getElementById("percentage").innerHTML = percentage + "%";
+
+        }
+
+    </script>
+    <div id = "container">
+        <div id = "input">
+           <span style = "margin-left:60px;"> Student's Name: </span> <input id = "stname" type = "text" name = "name"> &nbsp;&nbsp;&nbsp;&nbsp;
+           Roll Number: <input id = "stroll" type = "number" name = "rollNumber"> &nbsp;&nbsp;&nbsp;&nbsp;
+           Registration: <input id = "stregistration" type = "number" name = "registration">
+                <div id = "subject">
+                    Subject : <input id = "sub1" type = "text" name = "subject1"> <br>
+                    Subject : <input id = "sub2" type = "text" name = "subject2"> <br>
+                    Subject : <input id = "sub3" type = "text" name = "subject3"> <br>
+                    Subject : <input id = "sub4" type = "text" name = "subject4"> <br>
+                    Subject : <input id = "sub5" type = "text" name = "subject5"> <br>
+                </div>
+                <div id = "marks">
+                    Marks : <input id = "mark1" type = "number" name = "marks1"> <br>
+                    Marks : <input id = "mark2" type = "number" name = "marks2"> <br>
+                    Marks : <input id = "mark3" type = "number" name = "marks3"> <br>
+                    Marks : <input id = "mark4" type = "number" name = "marks4"> <br>
+                    Marks : <input id = "mark5" type = "number" name = "marks5"> <br>
+                </div>
+                <input style = "margin-top:80px;" onclick = "calculation()" type = "submit" value = "submit" name = submit>
+        </div>
+        <div id = "output">
+            <h3 style = "margin:0px auto; text-align:center; text-decoration: underline;"> Marksheet </h3>
+            <div id = "tablediv">
+                <table style = "width:300px; height:200px; border:2px solid black; margin:0px auto; margin-top:25px;">
+                    <tr style = "text-align:center">
+                        <th> Subject Name </th>
+                        <th> Marks </th>
+                    </tr>
+                    <tr style = "text-align:center">
+                        <td id = "tsub1">  </td>
+                        <td id = "tmark1"> </td>
+                    </tr>
+                    <tr style = "text-align:center">
+                        <td id = "tsub2"> </td>
+                        <td id = "tmark2"> </td>
+                    </tr>
+                    <tr style = "text-align:center">
+                        <td id = "tsub3"> </td>
+                        <td id = "tmark3"> </td>
+                    </tr>
+                    <tr style = "text-align:center">
+                        <td id = "tsub4">  </td>
+                        <td id = "tmark4"> </td>
+                    </tr>
+                    <tr style = "text-align:center">
+                        <td id = "tsub5"> </td>
+                        <td id = "tmark5"> </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id = "result">
+            <div id = "result1" class = "col-6">
+                <span id = "sname"> Student's Name: </span> <span id = "name"> </span> <br>
+                <span id = "sroll"> Roll Number: </span> <span id = "roll"> </span> <br>
+                <span id = "sregi"> Registration: </span> <span id = "registration"> </span>
+            </div>
+            <div id = "result2" class = "col-6">
+                <span id = "smarks"> Total Marks: </span> <span id = "totalmarks"> </span>  <br>
+                <span id = "spercen"> Percentage: </span> </span> <span id = "percentage"> </span> <br>
+                <span id = "sgrade"> Grade: </span> <span id = "grade"> </span>
+            </div>      
+        </div>
+    </div>
+</body>
+</html>

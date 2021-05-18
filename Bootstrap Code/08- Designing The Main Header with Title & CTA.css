@@ -1,0 +1,54 @@
+#contact-header
+{
+    background-color: blueviolet;
+    color: white;
+}
+
+#cobalt
+{
+    float: left;
+}
+
+.navilinks:hover
+{
+    background-color: orangered;
+    border-radius: 12px;
+}
+
+.navilinks a
+{
+    color: white !important;
+}
+
+#mainHeader
+{
+    height: 450px;
+    width: auto;
+    background-image:url('../Neon-10.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: fixed;
+}
+
+#mainHeader h3
+{
+    color:brown;
+    width: 100%;
+    text-align: center;
+    margin-top: 120px;
+}
+
+#button
+{
+    background-color: green;
+    height: 40px;
+    width: 90px;
+    border-radius: 12px;
+    margin: auto;
+    display: block;
+}
+#button:hover
+{
+    background-color:olivedrab;
+    border-style: none;
+}

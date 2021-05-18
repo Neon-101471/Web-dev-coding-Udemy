@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JavaScript | Homepage</title>
+</head>
+<body>
+    <h3 id = "showResult"> The result will show here </h3>
+    <button onClick = "addition()"> Click For Result </button> </br>
+    <script>
+        function addition ()
+        {
+            var value1 = document.getElementById('number1').value;
+            var value2 = document.getElementById('number2').value;
+            var result = parseInt(value1) + parseInt(value2);
+
+            document.getElementById('showResult').innerHTML = "The addition = "+ result;
+        }
+    </script>
+    </br>
+    <input type = "number" id = "number1"></br> </br>
+    <input type = "number" id = "number2">
+    
+</body>
+</html>

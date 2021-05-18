@@ -1,0 +1,102 @@
+#contact-header
+{
+    background-color: blueviolet;
+    color: white;
+}
+
+#cobalt
+{
+    float: left;
+}
+
+.navilinks:hover
+{
+    background-color: orangered;
+    border-radius: 12px;
+}
+
+.navilinks a
+{
+    color: white !important;
+}
+
+#mainHeader
+{
+    height: 450px;
+    width: auto;
+    background-image:url('../Neon-10.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: fixed;
+}
+
+#mainHeader h3
+{
+    color:brown;
+    width: 100%;
+    text-align: center;
+    margin-top: 120px;
+}
+
+#button
+{
+    background-color: green;
+    height: 40px;
+    width: 90px;
+    border-radius: 12px;
+    margin: auto;
+    display: block;
+}
+#button:hover
+{
+    background-color:olivedrab;
+    border-style: none;
+}
+
+#aboutSection
+{
+    background-color: #ebebeb;
+    height: 400px;
+}
+
+.sectionHeading
+{
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+}
+
+#hrSection
+{
+    width: 50px;
+    border: 1px solid black;
+    margin-top: 0px;
+}
+
+.saif
+{
+    height:150px;
+	width:120px;
+	border: 3px solid white;
+    border-radius:22px;
+    float:left;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.header
+{
+    float:left;
+    padding: 25px;
+}
+
+.header h2
+{
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+.header h3
+{
+    font-size: 20px;
+    margin-top:3px;
+}

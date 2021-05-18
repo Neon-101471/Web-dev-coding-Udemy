@@ -1,0 +1,188 @@
+#contact-header
+{
+    background-color: blueviolet;
+    color: white;
+}
+
+#cobalt
+{
+    float: left;
+}
+
+.navilinks:hover
+{
+    background-color: #ed9cd4;
+    border-radius: 12px;
+}
+
+.linkact
+{
+    background-color: #ed9cd4;
+    border-radius: 12px;
+}
+
+.navilinks a
+{
+    color: white !important;
+}
+#dropstyle
+{
+    background-color: black;
+}
+
+#dropstyle a:hover
+{
+    background-color: gray;
+}
+
+.dropdown:hover>.dropdown-menu
+{
+    display:block;
+}
+
+#mainHeader
+{
+    height: 450px;
+    width: auto;
+    background-image:url('../Neon-10.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: fixed;
+}
+
+#pageHeader
+{
+    height: 320px;
+    width: auto;
+    background-image:url('../Neon-10.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: fixed;
+}
+#mainHeader h3
+{
+    color:brown;
+    width: 100%;
+    text-align: center;
+    margin-top: 120px;
+}
+
+#pageHeader h3
+{
+    color:brown;
+    width: 100%;
+    text-align: center;
+    margin-top: 75px;
+}
+
+#button
+{
+    background-color:green;
+    height: 40px;
+    width: 90px;
+    border-radius: 12px;
+    margin: auto;
+    display: block;
+}
+#button:hover
+{
+    background-color: gray;
+    border-style: none;
+}
+
+#aboutButton
+{
+    background-color: navajowhite;
+    height: 40px;
+    width: 110px;
+    border-radius: 12px;
+    margin: auto;
+    display: block;
+    margin-top: 80px;
+}
+#aboutButton:hover
+{
+    background-color: gray;
+    border-style: none;
+}
+
+#aboutSection
+{
+    background-color: #ebebeb;
+    padding-bottom: 25px;
+}
+
+.sectionHeading
+{
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
+#hrSection
+{
+    width: 50px;
+    border: 1px solid black;
+    margin-top: 0px;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.saif
+{
+    height:150px;
+	width:120px;
+	border: 3px solid white;
+    border-radius:22px;
+    float:left;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.header
+{
+    float:left;
+    padding: 25px;
+}
+
+.header h2
+{
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+.header h3
+{
+    font-size: 20px;
+    margin-top:3px;
+}
+#statSection
+{
+    background-color: #def6f7;
+    height: 500px;
+}
+#hrSectionOne
+{
+    width: 70px;
+    border: 1px solid black;
+    margin-top: 0px;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+.progressbottom
+{
+    margin-bottom: 15px;
+}
+footer
+{
+    background-color: #e0c9c5;
+    padding: 10px;
+}
+
+#copyright
+{
+    background-color: #efdede;
+    padding: 7px;
+    margin: auto;
+    text-align: center;
+}

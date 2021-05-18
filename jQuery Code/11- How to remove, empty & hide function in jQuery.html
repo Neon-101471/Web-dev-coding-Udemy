@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Learning jQuery </title>
+    <link rel = "Stylesheet" type = "text/css" href = "jQuery.css">
+        <style>
+            #names
+            {
+                height: 250px;
+                width: 300px;
+                border: 2px solid black;
+                background-color: orange;
+            }
+        </style>
+    <script src = "jQuery.js"> </script>
+
+    <script>
+            $(document).ready(function()
+            {
+               $("#button").click(function(){
+                    var name = $("#name").val()
+                    $("#names").empty();
+               }); 
+            });
+    </script>
+
+</head>
+    <body>
+
+        <input type = "text" id = "name">
+        <button id = "button"> Click Here </button> </br> </br>
+        <div id = "names">
+            <ol>
+                <li> Saif Uddin Ahmed </li>
+                <li> Homaira Nowshin </li>
+                <li> Arif Akram </li>
+                <li> Ahmed Al Hadi </li>
+            </ol>
+        </div>
+        <pre> 
+            ● We can remove this property with remove function. But if i want to
+              hide this property i'm use the hide function instead of remove function.
+
+            ● When we use empty function instead of remove/hide function then data is empty
+              but, div is still show.
+        </pre>
+    </body>
+</html>
